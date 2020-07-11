@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Dashboard extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class WorkoutSession extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView lv;
     private ArrayList<Workout> wodList;
     private ArrayList<String> titleList;
@@ -46,7 +46,7 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemCl
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
-        Intent intent = new Intent(Dashboard.this, DetailActivity.class);
+        Intent intent = new Intent(WorkoutSession.this, DetailActivity.class);
         String title = wodList.get(pos).getTitle();
         String wod = wodList.get(pos).getWod();
 
